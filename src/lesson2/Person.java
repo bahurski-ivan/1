@@ -21,7 +21,7 @@ public class Person {
      * @param person - new husband/wife for this person.
      */
     public boolean marry(Person person) {
-        if(this.man == person.man || this.spouse == person) return false;
+        if(this.man == person.man || this.spouse == person) return false;//TODO: nullpointer
 
         this.divorce();
         person.divorce();
@@ -44,3 +44,4 @@ public class Person {
         return true;
     }
 }
+//TODO: unit tests as optional
